@@ -142,7 +142,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* text-transform: uppercase; */
 
   color: var(--main-title-color);
 }
@@ -251,8 +250,8 @@ body {
 }
 
 .feature-icon {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   display: block;
   margin-right: auto;
   margin-left: auto;
