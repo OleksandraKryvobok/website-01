@@ -16,85 +16,132 @@
 
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a class="logo" href="./index.html" lang="en">
-                <span class="logo-med">Med</span><span class="header-logo-center">Center№1</span>
-            </a>
+        <div class="header-cintainer container">
+            <nav class="header-nav">
+                <a class="logo link" href="./index.html" lang="en">
+                    <span class="logo-med">Med</span><span class="header-logo-center">Center№1</span>
+                </a>
     
-            <ul class="nav-list list">
-                <li class="nav-item"><a class="nav-link current" href="./index.html">Про клініку</a></li>
-                <li class="nav-item"><a class="nav-link" href="./poslugy.html">Послуги та ціни</a></li>
-                <li class="nav-item"><a class="nav-link" href=" ">Контакти</a></li>
+                <ul class="nav-list list">
+                    <li class="nav-item"><a class="nav-link link" href="./index.html">Про клініку</a></li>
+                    <li class="nav-item"><a class="nav-link current link" href="./poslugy.html">Послуги та ціни</a></li>
+                    <li class="nav-item"><a class="nav-link link" href=" ">Контакти</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="authorization list">
+                <li class="autho-item">
+                    <a class="autho-link link" href="mailto:info@medcenter.com">
+                        <svg class="icon-contact" width=16 height=12>
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        info@medcenter.com
+                    </a>
+                </li>
+                <li class="autho-item">
+                    <a class="autho-link link" href="tel:+380505554433">
+                        <svg class="icon-contact" width=10 height=16>
+                            <use href="./images/symbol-defs.svg#icon-mobile"></use>
+                        </svg>
+                        +38 050 555 44 33
+                    </a>
+                </li>
             </ul>
-        </nav>
-        <ul class="authorization list">
-            <li class="autho-item"><a class="autho-link" href="mailto:info@medcenter.com">info@medcenter.com</a></li>
-            <li class="autho-item"><a class="autho-link" href="tel:+380505554433">+38 050 555 44 33</a></li>
-        </ul>
+        </div>
     </header>
 
     <main>
+        <div class="gradient"></div>
         <section class="section">
-            <h1 class="section-title">Портфолио</h1>
+            <!-- <h1 class="section-title">Портфолио</h1>
             <ul class="filter-list list">
                 <li><button type="button" class="button">Все</button></li>
                 <li><button type="button" class="button">Веб-сайты</button></li>
                 <li><button type="button" class="button">Приложения</button></li>
                 <li><button type="button" class="button">Дизайн</button></li>
                 <li><button type="button" class="button">Маркетинг</button></li>
-            </ul>
-            <ul class="gallery list">
-                <li><img src="./images/poslugy/img(4).jpg" alt="Монитор ноутбука">
-                    <h2 class="title">Технокряк</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li><img src="./images/poslugy/img(5).jpg" alt="Два баскетболиста в процессе игры">
-                    <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                    <p>Дизайн</p>
-                </li>
-                <li><img src="./images/poslugy/img(6).jpg" alt="Логотип ресторана 'Seafood'">
-                    <h2 class="title">Ресторан Seafood</h2>
-                    <p>Приложение</p>
-                </li>
-                <li><img src="./images/poslugy/img(7).jpg" alt="Наушники">
-                    <h2 class="title">Проект Prime</h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li><img src="./images/poslugy/img(8).jpg" alt="Белая и оранжевая коробки">
-                    <h2 class="title">Проект Boxes</h2>
-                    <p>Приложение</p>
-                </li>
-                <li><img src="./images/poslugy/img.jpg" alt="Монитор компьютера">
-                    <h2 class="title">Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li><img src="./images/poslugy/img(1).jpg" alt="Журнал">
-                    <h2 class="title">Издание Limited Edition</h2>
-                    <p>Дизайн</p>
-                </li>
-                <li><img src="./images/poslugy/img(2).jpg" alt="Этикетка">
-                    <h2>Проект LAB</h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li><img src="./images/poslugy/img(3).jpg" alt="Человек печатает на компьютере">
-                    <h2 class="title">Growing Business</h2>
-                    <p>Приложение</p>
-                </li>
-            </ul>
+            </ul> -->
+            <div class="container">
+                <h2 class="section-title">Наші послуги</h2>
+                <ul class="service-list list">
+                    <li class="service-item">
+                        <img class="service-img" src="./images/x-ray/brain.jpg" alt="КТ головного мозку" width="370" />
+                        <div class="service-container">
+                            <h3 class="service-title">КТ голови</h3>
+                            <p class="service-text">Сканування головного мозку, черепа і оточуючих їх тканин, дослідження
+                                навколоносових пазух, що дозволяє виявляти різні
+                                патології мозку або ЛОР-органів. Діагностичне дослідження для оцінки стану кісток лицьового відділу
+                                черепа та ін.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <img class="service-img" src="./images/x-ray/soft-tissue.jpg" alt="КТ органів малого тазу" width="370" />
+                        <div class="service-container">
+                            <h3 class="service-title">КТ м'яких тканин</h3>
+                            <p class="service-text">КТ м’яких тканин однієї області – Дослідження, призначене для оцінки стану
+                                м’яких структур і розмірів патологічних
+                                утворень.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <img class="service-img" src="./images/x-ray/sinuses.jpg" alt="КТ додаткових пазух носа" width="370" />
+                        <div class="service-container">
+                            <h3 class="service-title">КТ внутрішніх органів</h3>
+                            <p class="service-text">Дослідження, що дозволяє отримати дані про стан органів грудної клітки та
+                                середостіння. Метод оцінки стану сечовидільної
+                                системи за допомогою комп’ютерної томографії. Дослідження, що дає інформацію про стан органів
+                                черевної порожнини і
+                                малого таза, а також тих, що оточують їх тканин.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <img class="service-img" src="./images/x-ray/spine.jpg" alt="КТ хребта" width="370" />
+                        <div class="service-container">
+                            <h3 class="service-title">КТ хребта</h3>
+                            <p class="service-text">Дослідження стану шийного відділу хребта і діагностувати патологічні зміни; для
+                                діагностики патологій грудного відділу
+                                хребта; дослідження, призначене для оцінки структури хребта, що дозволяє виявити патологічні
+                                утворення і ін.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <img class="service-img" src="./images/x-ray/bones.jpg" alt="КТ колінного суглобу" width="370" />
+                        <div class="service-container">
+                            <h3 class="service-title">КТ суглобів і кісток</h3>
+                            <p class="service-text">Сканування кісток і навколишніх тканин плечового пояса для виявлення патологій.
+                                Дослідження ліктьового суглоба і всіх
+                                його структур для діагностики захворювань і виявлення наслідків травм. Пошарове дослідження тканин
+                                тазостегнового
+                                суглоба для діагностики патологічних змін в його структурі.</p>
+                        </div>
+                    </li>
+                    <li class="service-item">
+                        <img class="service-img" src="./images/x-ray/extra.jpg" alt="Серія КТ зображень ОГК" width="370" />
+                        <div class="service-container">
+                            <h3 class="service-title">Додаткові послуги</h3>
+                            <p class="service-text">Опис КТ-зображення, наданого пацієнтом. Друк КТ-зображення на плівці. Дублікат
+                                знімка. Запис результатів дослідження на
+                                компакт-диск.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     
-<footer class="footer">
-    <a class="logo" href="./index.html" lang="en">
-        <span class="logo-med">Med</span><span class="footer-logo-center">Center№1</span>
-    </a>
-    <address class="address">м. Покровськ, в. Гагаріна, 31аг.</address>
-    <ul class="contact-list list">
-        <li class="contact-item"><a class="contact-link" href="mailto:info@medcenter.com"
-                class="contact">info@medcenter.com</a></li>
-        <li class="contact-item"><a class="contact-link" href="tel:+380505554433" class="contact">+38 050 555 44 33</a>
-        </li>
-    </ul>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <a class="logo footer-logo link" href="./index.html" lang="en">
+                <span class="logo-med">Med</span><span class="footer-logo-center">Center№1</span>
+            </a>
+            <address class="address">м. Покровськ, в. Гагаріна, 31</address>
+            <ul class="contact-list list">
+                <li class="contact-item"><a class="contact-link link" href="mailto:info@medcenter.com"
+                        class="contact">info@medcenter.com</a></li>
+                <li class="contact-item"><a class="contact-link link" href="tel:+380505554433" class="contact">+38 050 555
+                        44 33</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
