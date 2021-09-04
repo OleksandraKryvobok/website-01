@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <div class="header-cintainer container">
+        <div class="container">
             <nav class="header-nav">
                 <a class="logo link" href="./index.html" lang="en">
                     <span class="logo-med">Med</span><span class="header-logo-center">Center№1</span>
@@ -28,25 +28,6 @@
                     <li class="nav-item"><a class="nav-link link" href=" ">Контакти</a></li>
                 </ul>
             </nav>
-    
-            <ul class="authorization list">
-                <li class="autho-item">
-                    <a class="autho-link link" href="mailto:info@medcenter.com">
-                        <svg class="icon-contact" width=16 height=12>
-                            <use href="./images/symbol-defs.svg#icon-mail"></use>
-                        </svg>
-                        info@medcenter.com
-                    </a>
-                </li>
-                <li class="autho-item">
-                    <a class="autho-link link" href="tel:+380505554433">
-                        <svg class="icon-contact" width=10 height=16>
-                            <use href="./images/symbol-defs.svg#icon-mobile"></use>
-                        </svg>
-                        +38 050 555 44 33
-                    </a>
-                </li>
-            </ul>
         </div>
     </header>
 
@@ -134,12 +115,23 @@
             <a class="logo footer-logo link" href="./index.html" lang="en">
                 <span class="logo-med">Med</span><span class="footer-logo-center">Center№1</span>
             </a>
-            <address class="address">м. Покровськ, в. Гагаріна, 31</address>
+            <address class="address">
+                <svg class="location-icon">
+                    <use href="./images/sprite.svg#icon-location"></use>
+                </svg>
+                м. Покровськ, в. Гагаріна, 31
+            </address>
             <ul class="contact-list list">
-                <li class="contact-item"><a class="contact-link link" href="mailto:info@medcenter.com"
-                        class="contact">info@medcenter.com</a></li>
-                <li class="contact-item"><a class="contact-link link" href="tel:+380505554433" class="contact">+38 050 555
-                        44 33</a></li>
+                <li class="contact-item"><a class="contact-link link" href="mailto:info@medcenter.com" class="contact">
+                        <svg class="icon-contact" width=16 height=12>
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        info@medcenter.com</a></li>
+                <li class="contact-item"><a class="contact-link link" href="tel:+380505554433" class="contact">
+                        <svg class="icon-contact" width=10 height=16>
+                            <use href="./images/sprite.svg#icon-mobile"></use>
+                        </svg>
+                        +38 050 555 44 33</a></li>
             </ul>
         </div>
     </footer>

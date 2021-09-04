@@ -16,7 +16,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-cintainer container">
+        <div class="container">
             <nav class="header-nav">
                 <a class="logo link" href="./index.html" lang="en">
                     <span class="logo-med">Med</span><span class="header-logo-center">Center№1</span>
@@ -28,25 +28,6 @@
                     <li class="nav-item"><a class="nav-link link" href=" ">Контакти</a></li>
                 </ul>
             </nav>
-
-            <ul class="authorization list">
-                <li class="autho-item">
-                    <a class="autho-link link" href="mailto:info@medcenter.com">
-                        <svg class="icon-contact" width=16 height=12>
-                            <use href="./images/sprite.svg#icon-mail"></use>
-                        </svg> 
-                        info@medcenter.com
-                    </a>
-                </li>
-                <li class="autho-item">
-                    <a class="autho-link link" href="tel:+380505554433">
-                        <svg class="icon-contact" width=10 height=16>
-                            <use href="./images/sprite.svg#icon-mobile"></use>
-                        </svg>
-                        +38 050 555 44 33
-                    </a>
-                </li>
-            </ul>
         </div>
     </header>
     
@@ -101,64 +82,6 @@
                     </li>
                 </ul>
             </div>
-        </section>
-
-        <section class="section">
-            <!-- <div class="container">
-                <h2 class="section-title">Наші послуги</h2>  
-                <ul class="service-list list">
-                    <li class="service-item"> 
-                        <img class="service-img" src="./images/x-ray/brain.jpg" alt="КТ головного мозку" width="370"  />
-                        <div class="service-container">
-                            <h3 class="service-title">КТ голови</h3>
-                            <p class="service-text">Сканування головного мозку, черепа і оточуючих їх тканин, дослідження навколоносових пазух, що дозволяє виявляти різні
-                            патології мозку або ЛОР-органів. Діагностичне дослідження для оцінки стану кісток лицьового відділу черепа та ін.</p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <img class="service-img" src="./images/x-ray/soft-tissue.jpg" alt="КТ органів малого тазу" width="370" />
-                        <div class="service-container">
-                            <h3 class="service-title">КТ м'яких тканин</h3>
-                            <p class="service-text">КТ м’яких тканин однієї області – Дослідження, призначене для оцінки стану м’яких структур і розмірів патологічних
-                            утворень.</p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <img class="service-img" src="./images/x-ray/sinuses.jpg" alt="КТ додаткових пазух носа" width="370" />
-                        <div class="service-container">
-                            <h3 class="service-title">КТ внутрішніх органів</h3>
-                            <p class="service-text">Дослідження, що дозволяє отримати дані про стан органів грудної клітки та середостіння. Метод оцінки стану сечовидільної
-                            системи за допомогою комп’ютерної томографії. Дослідження, що дає інформацію про стан органів черевної порожнини і
-                            малого таза, а також тих, що оточують їх тканин.</p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <img class="service-img" src="./images/x-ray/spine.jpg" alt="КТ хребта" width="370" />
-                        <div class="service-container">
-                            <h3 class="service-title">КТ хребта</h3>
-                            <p class="service-text">Дослідження стану шийного відділу хребта і діагностувати патологічні зміни; для діагностики патологій грудного відділу
-                            хребта; дослідження, призначене для оцінки структури хребта, що дозволяє виявити патологічні утворення і ін.</p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <img class="service-img" src="./images/x-ray/bones.jpg" alt="КТ колінного суглобу" width="370" />
-                        <div class="service-container">
-                            <h3 class="service-title">КТ суглобів і кісток</h3>
-                            <p class="service-text">Сканування кісток і навколишніх тканин плечового пояса для виявлення патологій. Дослідження ліктьового суглоба і всіх
-                            його структур для діагностики захворювань і виявлення наслідків травм. Пошарове дослідження тканин тазостегнового
-                            суглоба для діагностики патологічних змін в його структурі.</p>
-                        </div>
-                    </li>
-                    <li class="service-item">
-                        <img class="service-img" src="./images/x-ray/extra.jpg" alt="Серія КТ зображень ОГК" width="370" />
-                        <div class="service-container">
-                            <h3 class="service-title">Додаткові послуги</h3>
-                            <p class="service-text">Опис КТ-зображення, наданого пацієнтом. Друк КТ-зображення на плівці. Дублікат знімка. Запис результатів дослідження на
-                            компакт-диск.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>      -->
         </section>
 
         <section class="section last-section">
@@ -297,8 +220,16 @@
                 </svg>
                 м. Покровськ, в. Гагаріна, 31</address>
             <ul class="contact-list list">
-                <li class="contact-item"><a class="contact-link link" href="mailto:info@medcenter.com" class="contact">info@medcenter.com</a></li>
-                <li class="contact-item"><a class="contact-link link" href="tel:+380505554433" class="contact">+38 050 555 44 33</a></li>
+                <li class="contact-item"><a class="contact-link link" href="mailto:info@medcenter.com" class="contact">
+                    <svg class="icon-contact" width=16 height=12>
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    info@medcenter.com</a></li>
+                <li class="contact-item"><a class="contact-link link" href="tel:+380505554433" class="contact">
+                    <svg class="icon-contact" width=10 height=16>
+                        <use href="./images/sprite.svg#icon-mobile"></use>
+                    </svg>
+                    +38 050 555 44 33</a></li>
             </ul>
         </div>
     </footer>
