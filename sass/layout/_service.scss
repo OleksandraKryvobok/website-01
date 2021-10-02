@@ -1,0 +1,213 @@
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+  margin-right: -15px;
+}
+
+.service-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.service-img {
+  display: block;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.service-container {
+  min-height: 250px;
+  padding: 15px 10px;
+  border-right: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a1a1a1;
+  border-left: 1px solid #a1a1a1;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.service-title {
+  margin-bottom: 5px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-title-color);
+}
+
+.service-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+// .filter {
+//   display: flex;
+//   flex-wrap: wrap;
+//   @media screen and (min-width: 768px) {
+//     justify-content: center;
+//   }
+// }
+
+// .portfolio__filter {
+//   margin-bottom: 25px;
+
+//   @media screen and (min-width: 768px) {
+//     margin-bottom: 30px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 50px;
+//   }
+// }
+
+// .filter__item {
+//   @media screen and (max-width: 767px) {
+//     margin-right: 8px;
+//     margin-bottom: 15px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     &:not(:last-child) {
+//       margin-right: 8px;
+//     }
+//   }
+// }
+
+// .filter__button {
+//   padding: 6px 22px;
+//   border: 0;
+//   border-radius: 4px;
+
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.63;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+
+//   color: var(--main-title-color);
+//   background-color: #f5f4fa;
+
+//   transition-property: box-shadow, color, background-color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:focus,
+//   &:hover {
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+
+//     color: var(--secondary-title-color);
+//     background-color: var(--accent-color);
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .projects {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
+// .portfolio__projects {
+//   @media screen and (min-width: 768px) {
+//     margin: -15px;
+//   }
+// }
+
+// .projects__item {
+//   width: 100%;
+//   @media screen and (max-width: 767px) {
+//     &:not(:last-child) {
+//       margin-bottom: 30px;
+//     }
+//   }
+//   @media screen and (min-width: 768px) {
+//     flex-basis: calc(100% / 2 - 30px);
+//     margin: 15px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     flex-basis: calc(100% / 3 - 30px);
+//   }
+// }
+
+// .projects__link {
+//   display: inline-block;
+
+//   width: 100%;
+
+//   transition-property: box-shadow;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+//   }
+// }
+
+// .overlay {
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .overlay__img {
+//   display: block;
+//   width: 100%;
+// }
+
+// .overlay__text {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   transform: translateY(100%);
+//   transition-property: transform;
+//   transition-duration: 400ms;
+//   transition-timing-function: linear;
+
+//   height: 100%;
+//   padding: 63px 24px;
+
+//   font-size: 18px;
+//   line-height: 1.56;
+//   letter-spacing: 0.03em;
+//   color: #ffffff;
+//   background-color: rgba(33, 150, 243, 0.9);
+//   overflow: auto;
+
+//   .projects__link:hover &,
+//   .projects__link:focus & {
+//     transform: translateY(0);
+//   }
+// }
+
+// .projects__container {
+//   padding: 20px 24px;
+//   border-right: 1px solid #eeeeee;
+//   border-bottom: 1px solid #eeeeee;
+//   border-left: 1px solid #eeeeee;
+// }
+
+// .projects__title {
+//   margin-bottom: 4px;
+
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 2;
+//   letter-spacing: 0.06em;
+
+//   color: var(--main-title-color);
+// }
+
+// .projects__type {
+//   font-size: 16px;
+//   line-height: 1.88;
+//   letter-spacing: 0.03em;
+
+//   color: var(--main-text-color);
+// }

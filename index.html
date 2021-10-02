@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header-nav">
-                <a class="logo link" href="./index.html" lang="en">
-                    <span class="logo-med">Med</span><span class="header-logo-center">Center№1</span>
+            <nav class="navigation">
+                <a class="logo header__logo link" href="./index.html" lang="en">
+                    <span class="logo__med">Med</span><span class="logo__center">Center№1</span>
                 </a>
 
-                <ul class="nav-list list">
-                    <li class="nav-item"><a class="nav-link current link" href="./index.html">Про клініку</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="./poslugy.html">Послуги та ціни</a></li>
-                    <li class="nav-item"><a class="nav-link link" href=" ">Контакти</a></li>
+                <ul class="navigation__list list">
+                    <li class="navigation__item"><a class="navigation__link navigation__link--current link" href="./index.html">Про клініку</a></li>
+                    <li class="navigation__item"><a class="navigation__link link" href="./poslugy.html">Послуги та ціни</a></li>
+                    <li class="navigation__item"><a class="navigation__link link" href=" ">Контакти</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +35,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Найкаща якість послуг для вас <br>та вашої родини</h1>
-                <button type="button" class="hero-button btn">Записатись на обстеження</button>
+                <button type="button" class="hero-button btn" data-modal-open>Записатись на обстеження</button>
             </div>
         </section>
         
@@ -114,6 +114,7 @@
                                             </svg>
                                         </a>
                                     </li>
+                                </ul>
                             </div>                           
                         </div>
                     </li>
@@ -143,6 +144,7 @@
                                             </svg>
                                         </a>
                                     </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
@@ -172,6 +174,7 @@
                                             </svg>
                                         </a>
                                     </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
@@ -201,6 +204,7 @@
                                             </svg>
                                         </a>
                                     </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
@@ -210,28 +214,140 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <a class="logo footer-logo link" href="./index.html" lang="en">
-                <span class="logo-med">Med</span><span class="footer-logo-center">Center№1</span>
-            </a>
-            <address class="address">
-                <svg class="location-icon">
-                    <use href="./images/sprite.svg#icon-location"></use>
-                </svg>
-                м. Покровськ, в. Гагаріна, 31</address>
-            <ul class="contact-list list">
-                <li class="contact-item"><a class="contact-link link" href="mailto:info@medcenter.com" class="contact">
-                    <svg class="icon-contact" width=16 height=12>
-                        <use href="./images/sprite.svg#icon-mail"></use>
+        <div class="container footer__container">
+            <div class="contacts">
+                <a class="logo footer__logo link" href="./index.html" lang="en">
+                    <span class="logo__med">Med</span><span class="logo__center--inverse">Center№1</span>
+                </a>
+
+                <address class="address">
+                    <svg class="address__icon">
+                        <use href="./images/sprite.svg#icon-location"></use>
                     </svg>
-                    info@medcenter.com</a></li>
-                <li class="contact-item"><a class="contact-link link" href="tel:+380505554433" class="contact">
-                    <svg class="icon-contact" width=10 height=16>
-                        <use href="./images/sprite.svg#icon-mobile"></use>
-                    </svg>
-                    +38 050 555 44 33</a></li>
-            </ul>
+                    м. Покровськ, в. Гагаріна, 31</address>
+
+                <ul class="list">
+                    <li class="contacts__item contacts__item--first">
+                        <a class="contacts__link link" href="mailto:info@medcenter.com" class="contact">
+                            <svg class="contacts__icon" width=16 height=12>
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@medcenter.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link link" href="tel:+380505554433" class="contact">
+                            <svg class="contacts__icon" width=10 height=16>
+                                <use href="./images/sprite.svg#icon-mobile"></use>
+                            </svg>
+                            +38 050 555 44 33
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-soc">
+                <h3 class="footer-soc-title"><strong class="footer-strong">Присоединяйтесь</strong></h3>
+                <ul class="socials-list list">
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <svg class="soc-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <svg class="soc-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <svg class="soc-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="footer-form">
+                <label class="footer-label"><strong class="footer-strong">подпишитесь на рассылку</strong></label>
+                <div class="footer-flex">
+                    <input class="footer-input" type="email" name="e-mail" placeholder="E-mail" />
+                    <button class="footer-button btn" type="submit">Подписаться</button>
+                </div>
+            </form>
+            </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <div class="modal-close">
+                <button class="modal-close" type="button" data-modal-close>
+                    <svg class="icon-close">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>  
+            </div> 
+
+            <form class="modal-form">
+                <b class="modal-title">Залиште свої дані, ми вам зателефонуємо</b>
+                <div class="modal-container">
+                    <label class="modal-name" for="name">Имя</label>
+                    <div class="input-svg">
+                        <input class="modal-input" type="text" name="name" id="name" />
+                        <svg class="modal-icon">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+            
+                <div class="modal-container">
+                    <label class="modal-tel" for="tel">Телефон</label>
+                    <div class="input-svg">
+                        <input class="modal-input" type="tel" name="tel" id="tel" />
+                        <svg class="modal-icon">
+                            <use href="./images/sprite.svg#icon-phone-modal"></use>
+                        </svg>
+                    </div>
+                </div>
+            
+                <div class="modal-container">
+                    <label class="modal-email" for="email">Почта</label>
+                    <div class="input-svg">
+                        <input class="modal-input" type="email" name="email" id="email" />
+                        <svg class="modal-icon">
+                            <use href="./images/sprite.svg#icon-email-modal"></use>
+                        </svg>
+                    </div>
+                </div>
+            
+                <div class="textarea-container">
+                    <label class="modal-comment" for="comment">Комментарий</label>
+                    <textarea class="textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                </div>
+            
+                <div class="checkbox-container">
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement">
+                    <label class="checkbox-text" for="agreement">
+                        <span class="checkbox-span">
+                            <svg class="checkbox-icon" width="15" height="12">
+                                <use href="./images/sprite.svg#icon-vector"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю <a class="conditions">Условия договора</a>
+                    </label>
+                </div>
+            
+                <button class="modal-button btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
