@@ -34,7 +34,7 @@
     <main>
         <section class="section hero">
             <div class="container">
-                <h1 class="hero-title">Найкаща якість послуг для вас <br>та вашої родини</h1>
+                <h1 class="hero-title">Найкаща якість послуг для Вас</h1>
                 <button type="button" class="hero-button btn" data-modal-open>Записатись на обстеження</button>
             </div>
         </section>
@@ -220,11 +220,12 @@
                     <span class="logo__med">Med</span><span class="logo__center--inverse">Center№1</span>
                 </a>
 
-                <address class="address">
+                <button class="address" type="button" data-modal-map-open>
                     <svg class="address__icon">
                         <use href="./images/sprite.svg#icon-location"></use>
                     </svg>
-                    м. Покровськ, в. Гагаріна, 31</address>
+                    в. Європейська, 52, м. Покровськ, <br>Донецька область</button>
+                </button>
 
                 <ul class="list">
                     <li class="contacts__item contacts__item--first">
@@ -286,13 +287,12 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <div class="modal-close">
-                <button class="modal-close" type="button" data-modal-close>
-                    <svg class="icon-close">
-                        <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>  
-            </div> 
+            <button class="modal-close" type="button" data-modal-close>
+                <svg class="icon-close">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>  
+ 
 
             <form class="modal-form">
                 <b class="modal-title">Залиште свої дані, ми вам зателефонуємо</b>
@@ -339,12 +339,24 @@
                                 <use href="./images/sprite.svg#icon-vector"></use>
                             </svg>
                         </span>
-                        Соглашаюсь с рассылкой и принимаю <a class="conditions">Условия договора</a>
+                        Соглашаюсь с рассылкой и принимаю <a class="conditions" href="">Условия договора</a>
                     </label>
                 </div>
             
                 <button class="modal-button btn" type="submit">Отправить</button>
             </form>
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden">
+        <div class="modal-map" data-modal-map>
+            <button class="modal-close" type="button" data-modal-map-close>
+                <svg class="icon-close">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1481.8111958097686!2d37.175833429789854!3d48.27665193922883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40de37f769e1f631%3A0x179881a56b573e12!2z0KXRg9C00L7QttC90Y8g0KXQsNGC0LA!5e0!3m2!1sru!2sua!4v1662576464568!5m2!1sru!2sua" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">в. Європейська, 52, м. Покровськ, <br>Донецька область</iframe>
         </div>
     </div>
 

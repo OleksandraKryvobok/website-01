@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>MedCenter№1</title>
+    <title>MedCenter№1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,15 +17,15 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header-nav">
-                <a class="logo link" href="./index.html" lang="en">
-                    <span class="logo-med">Med</span><span class="header-logo-center">Center№1</span>
+            <nav class="navigation">
+                <a class="logo header__logo link" href="./index.html" lang="en">
+                    <span class="logo__med">Med</span><span class="logo__center">Center№1</span>
                 </a>
-    
-                <ul class="nav-list list">
-                    <li class="nav-item"><a class="nav-link link" href="./index.html">Про клініку</a></li>
-                    <li class="nav-item"><a class="nav-link current link" href="./poslugy.html">Послуги та ціни</a></li>
-                    <li class="nav-item"><a class="nav-link link" href=" ">Контакти</a></li>
+
+                <ul class="navigation__list list">
+                    <li class="navigation__item"><a class="navigation__link link" href="./index.html">Про клініку</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link--current link" href="./poslugy.html">Послуги та ціни</a></li>
+                    <li class="navigation__item"><a class="navigation__link link" href=" ">Контакти</a></li>
                 </ul>
             </nav>
         </div>
@@ -111,28 +111,73 @@
     </main>
     
     <footer class="footer">
-        <div class="container">
-            <a class="logo footer-logo link" href="./index.html" lang="en">
-                <span class="logo-med">Med</span><span class="footer-logo-center">Center№1</span>
-            </a>
-            <address class="address">
-                <svg class="location-icon">
-                    <use href="./images/sprite.svg#icon-location"></use>
-                </svg>
-                м. Покровськ, в. Гагаріна, 31
-            </address>
-            <ul class="contact-list list">
-                <li class="contact-item"><a class="contact-link link" href="mailto:info@medcenter.com" class="contact">
-                        <svg class="icon-contact" width=16 height=12>
-                            <use href="./images/sprite.svg#icon-mail"></use>
-                        </svg>
-                        info@medcenter.com</a></li>
-                <li class="contact-item"><a class="contact-link link" href="tel:+380505554433" class="contact">
-                        <svg class="icon-contact" width=10 height=16>
-                            <use href="./images/sprite.svg#icon-mobile"></use>
-                        </svg>
-                        +38 050 555 44 33</a></li>
-            </ul>
+        <div class="container footer__container">
+            <div class="contacts">
+                <a class="logo footer__logo link" href="./index.html" lang="en">
+                    <span class="logo__med">Med</span><span class="logo__center--inverse">Center№1</span>
+                </a>
+
+                <address class="address">
+                    <svg class="address__icon">
+                        <use href="./images/sprite.svg#icon-location"></use>
+                    </svg>
+                    м. Покровськ, в. Гагаріна, 31</address>
+
+                <ul class="list">
+                    <li class="contacts__item contacts__item--first">
+                        <a class="contacts__link link" href="mailto:info@medcenter.com" class="contact">
+                            <svg class="contacts__icon" width=16 height=12>
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@medcenter.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link link" href="tel:+380505554433" class="contact">
+                            <svg class="contacts__icon" width=10 height=16>
+                                <use href="./images/sprite.svg#icon-mobile"></use>
+                            </svg>
+                            +38 050 555 44 33
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-soc">
+                <h3 class="footer-soc-title"><strong class="footer-strong">Присоединяйтесь</strong></h3>
+                <ul class="socials-list list">
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <svg class="soc-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <svg class="soc-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <svg class="soc-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="footer-form">
+                <label class="footer-label"><strong class="footer-strong">подпишитесь на рассылку</strong></label>
+                <div class="footer-flex">
+                    <input class="footer-input" type="email" name="e-mail" placeholder="E-mail" />
+                    <button class="footer-button btn" type="submit">Подписаться</button>
+                </div>
+            </form>
+            </div>
         </div>
     </footer>
 </body>

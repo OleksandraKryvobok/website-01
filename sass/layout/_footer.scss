@@ -22,12 +22,23 @@
 }
 
 .address {
+  display: inline-block;
   margin-bottom: 9px;
+  padding: 0;
+
+  border: 0;
+  background-color: inherit;
   color: var(--secondary-title-color);
 
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.884);
+
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.3, 1);
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
